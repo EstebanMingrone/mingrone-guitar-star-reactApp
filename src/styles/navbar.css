@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    font-family: 'CS Rocky';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    width: 9em;
+}
+
+.categories ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.categories li:hover{
+    color: #ffb800;
+    cursor: pointer;
+}
+
+.cartContainer{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.cartIcon :hover{
+    color: #ffb800;
+    cursor: pointer;
+}
