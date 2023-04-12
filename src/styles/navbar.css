@@ -8,6 +8,7 @@
     background-color: black;
     color: white;
     font-family: 'CS Rocky';
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,9 +26,19 @@
     gap: 15px;
 }
 
-.categories li:hover{
+.activeCategoryBtn{
     color: #ffb800;
-    cursor: pointer;
+    text-decoration: none;
+}
+
+.inactiveCategoryBtn{
+    color: white;
+    text-decoration: none;
+}
+
+.inactiveCategoryBtn :hover{
+    color: #ffb800;
+    
 }
 
 .cartContainer{

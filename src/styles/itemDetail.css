@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.detailsItem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.containerLeft{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.containerLeft img{
+    width: 100%;
+}
+
+.containerRight{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 600px;
+}
+
+.containerRight .cardTitle{
+    font-size: 3rem;
+}
+
+.containerRight .counterContainer{
+    display: flex;
+    justify-content: start;
+}

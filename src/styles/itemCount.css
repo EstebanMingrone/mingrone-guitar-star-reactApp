@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contadorContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Bahnschrift';
+    color: black;
+    
+}
+
+.controls{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button{
+    font-size: 20px;
+    background-color: #ffb800;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.contadorContainer button:hover{
+    background-color: black;
+    color: #ffb800;
+}
+
+.cartBtn{
+    background-color: #ffb800;
+    padding: 10px;
+    border-radius: 15px;
+}
