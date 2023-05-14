@@ -2,7 +2,7 @@ import { useState } from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../styles/itemCount.css'
 
-const ItemCount = ({ stock, initial })=> {
+const ItemCount = ({ stock, initial, onAdd })=> {
     const [counter, setCounter] = useState(initial);
 
     const addCount = ()=>{
@@ -20,12 +20,8 @@ const ItemCount = ({ stock, initial })=> {
         }
     }
 
-    const onAdd = ()=>{
-        if (counter>0) {
-            alert("Usted ha seleccionado " + counter + " productos.")
-        } else{
-            
-        }
+    const useOnAdd = ()=>{
+       onAdd(counter)
     }
     
     return(
@@ -37,7 +33,7 @@ const ItemCount = ({ stock, initial })=> {
                     <button onClick={addCount}>+</button>
                 </div>
                 <div>
-                    <button className="cartBtn" onClick={()=>onAdd(counter)}>
+                    <button className="cartBtn" onClick={useOnAdd}>
                         <ShoppingCartIcon sx={{ fontSize: 21 }}/>
                     </button>
                 </div>

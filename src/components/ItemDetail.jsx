@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ItemCount from './ItemCount'
 import '../styles/itemDetail.css'
+import BuyBtn from './BuyBtn'
+import { useCartContext } from '../context/CartContext'
 
 const ItemDetail = ({product}) => {
-  const onAdd = (cant) =>{
-    console.log(cant)
-  }
+    const [finishBtn, setFinishBtn] = useState('btn')
+    const { addCart } = useCartContext();
+
+    const onAdd = (cant) =>{
+        console.log(cant);
+        addCart( { ...product, quantity: cant})
+        setFinishBtn('finish');
+    }
   
   return (
     <>
@@ -22,10 +29,12 @@ const ItemDetail = ({product}) => {
                     <span className="cardCant">Cantidad: {product.stock}</span>
                     <span className="cardPrice"> U$D {product.price}</span>
                 </div>
-            
-                <div className="btns">
-                    <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
-                </div>
+                {
+                    finishBtn == 'btn' ?
+                        <ItemCount /*changeBtn={changeBtn}*/ initial={1} stock={product.stock} onAdd={onAdd}/>
+                    :
+                        <BuyBtn/>
+                }
             </div>
         </div>
     </>

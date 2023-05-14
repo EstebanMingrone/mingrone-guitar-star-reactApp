@@ -17,7 +17,7 @@ const Navbar=()=>{
                     <NavLink className={({isActive})=> isActive ? 'activeCategoryBtn' : 'inactiveCategoryBtn' } to='/category/bajo'><li>Bajos</li></NavLink>
                 </ul>
             </div>
-            <NavLink className={({isActive})=> isActive ? 'activeCategoryBtn' : 'inactiveCategoryBtn' } to='/category'><CartWidget/></NavLink>
+            <NavLink className={({isActive})=> isActive ? 'activeCategoryBtn' : 'inactiveCategoryBtn' } to='/cart'><CartWidget/></NavLink>
         </header>
         </>
     )

@@ -41,3 +41,17 @@
     padding: 10px;
     border-radius: 15px;
 }
+
+.buyBtn button{
+    background-color: #ffb800;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.buyBtn button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #ffb800;
+}
