@@ -13,12 +13,16 @@ export const CartContextProvider = ({children}) => {
         ])
     }
 
+    const totalPrice = ()=>{
+        return cartList.reduce((totalCost, objProduct)=> totalCost = totalCost + (objProduct.price * objProduct.quantity)  , 0)
+    }
+
     const clearCart = ()=>{
         setCartList([])
     }
 
     return(
-        <CartContext.Provider value={{cartList, addCart, clearCart}}>
+        <CartContext.Provider value={{cartList, addCart, clearCart, totalPrice}}>
             {children}
         </CartContext.Provider>
     )

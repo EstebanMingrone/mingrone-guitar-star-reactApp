@@ -1,7 +1,7 @@
 import { useCartContext } from "../context/CartContext"
 
 const CartContainer = ()=>{
-    const { cartList, clearCart } = useCartContext()
+    const { cartList, clearCart, totalPrice } = useCartContext()
     return(
         <>
             {
@@ -12,6 +12,7 @@ const CartContainer = ()=>{
                     </li>
                 ))
             }
+            <h3>Total: ${totalPrice()}</h3>
             <button onClick={clearCart}>Borrar todo</button>
         </>
     )
