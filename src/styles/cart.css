@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.emptyCart{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyCart h2{
+    font-family: 'CS Rocky';
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.emptyCart button{
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    background-color: #ffb800;
+    border-radius: 10px;
+}
+
+.emptyCart button:hover{
+    color: #ffb800;
+    background-color: black;
+    cursor: pointer;
+}
+
+.cartOrder{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    justify-content:space-between;
+    font-family: 'Bahnschrift';
+    align-items: center;
+    border-top: solid 2px;
+    background-color: rgba(0, 0, 0, 0.027);
+}
+
+
+.cartOrder img{
+    width: 120px;
+    border: solid #ffb800;
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 24px -1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 7px 24px -1px rgba(0,0,0,0.2);
+
+}
+
+.cartOrder li{
+    display: flex;
+    flex-direction: row;
+}
+
+.cartDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cartBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.cartBtns button{
+    padding: 10px;
+    font-family: 'CS Rocky';
+    background-color: #ffb800;
+    border-radius: 10px;
+}
+
+.cartBtns button:hover{
+    background-color: #000000;
+    color: #ffb800;
+    cursor: pointer;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    font-family: 'Bahnschrift';
+}
+
+.formContainer button{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'CS Rocky';
+    background-color: #ffb800;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer button:hover{
+    background-color: #000000;
+    color: #ffb800;
+    cursor: pointer;
+}
+
+.formCart{
+    background-color: rgba(0, 0, 0, 0.062);
+    padding: 10px;
+}
+
+.formCart input{
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.order{
+    font-family: 'Bahnschrift';
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffb800;
+    border: #000000 solid;
+}

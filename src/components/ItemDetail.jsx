@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import ItemCount from './ItemCount'
-import '../styles/itemDetail.css'
 import BuyBtn from './BuyBtn'
 import { useCartContext } from '../context/CartContext'
+import '../styles/itemDetail.css'
 
 const ItemDetail = ({product}) => {
     const [finishBtn, setFinishBtn] = useState('btn')
@@ -31,7 +31,7 @@ const ItemDetail = ({product}) => {
                 </div>
                 {
                     finishBtn == 'btn' ?
-                        <ItemCount /*changeBtn={changeBtn}*/ initial={1} stock={product.stock} onAdd={onAdd}/>
+                        <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
                     :
                         <BuyBtn/>
                 }

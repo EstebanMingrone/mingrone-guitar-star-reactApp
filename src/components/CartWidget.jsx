@@ -1,6 +1,6 @@
+import { useCartContext } from '../context/CartContext';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../styles/navbar.css'
-import { useCartContext } from '../context/CartContext';
 
 const CartWidget = ()=>{
     const {totalQuantity} = useCartContext()
